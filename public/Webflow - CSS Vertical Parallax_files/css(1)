@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/l/font?kit=rax8HiqOu8IVPmnLfZ5IJHoZ3w-fuHLRZ--8CwQi44XLZS859EjNiLrnPETUDWD8oujm&skey=c92268a3e57ee309&v=v13) format('woff2');
+}
+@font-face {
+  font-family: 'Changa One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Changa One'), local('ChangaOne'), url(https://fonts.gstatic.com/l/font?kit=xfu00W3wXn3QLUJXhzq46APwmJ-YcOuVDQ5_EK1_aH5W0hi01GvZp8l-fsWmkjbTIRy8VVB_tQ&skey=b778b7c8d55425c&v=v11) format('woff2');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans Regular'), local('DroidSans-Regular'), url(https://fonts.gstatic.com/l/font?kit=SlGVmQWMvZQIdix7AFxXoHFATBxXIU-N6iHybvgkUfwuJvv-4gotM5u0sGDGLSkiARWe1t08Sg&skey=89a402e2c0235a02&v=v8) format('woff2');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif Regular'), local('DroidSerif-Regular'), url(https://fonts.gstatic.com/l/font?kit=tDbI2oqRg1oM3QBjjcaDkNr_viTcWUfDCAWdqF2zUL0QaSbG2MX44m6nBjbnRHuSqFNX6JrqYLE&skey=a46d7e8bf49adcd6&v=v8) format('woff2');
+}
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo Regular'), local('Exo-Regular'), url(https://fonts.gstatic.com/l/font?kit=4UaOrEtFpBIicWyC0HClo-iOq9c5ZFMUbQJ9quvE2kToyKoUhr5c64BgXEZAzelS&skey=863005d54d49b6b0&v=v7) format('woff2');
+}
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Great Vibes'), local('GreatVibes-Regular'), url(https://fonts.gstatic.com/l/font?kit=RWmMoKWR9v4ksMfaWd_JN-XHm4UiTiIvTxDdZjsYkn4BTuwOAlT-_HlVThoe4TO-un8j0k7fOgw&skey=1a66edef5eadc723&v=v5) format('woff2');
+}
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/l/font?kit=QldKNThLqRwH-OJ1UHjlKFlb9IlOhbq0SdNvhw2tnt8vXm8w_cWKwygZLnK_-TP3rrvrfgirkp0&skey=20fa6569a31c71ee&v=v16) format('woff2');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/l/font?kit=S6uyw4BMUTPHvxwify_tX2OtqpR5o7sIhJ2RWdnMWjdMPbdqRlpwXrfWrVoFk-H_vA&skey=2d58b92a99e1c086&v=v14) format('woff2');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/l/font?kit=u-440qyriQwlOrhSvowK_l5OfjRtf6W86ryudDHLTMkjwsGSWdDnoQKPbZ3FbofRxzbSlFOfYxNy&skey=379c1eccf863c625&v=v19) format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/l/font?kit=JTUSjIg1_i6t8kCHKm45xWtz6i6huJIw42Lv5iNuGywA9uzZWtqv0ussH3jcuN3tQbtbiK2MYA&skey=7bc19f711c0de8f&v=v12) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/l/font?kit=mem8YaGs126MiZpBA-U1V486dYovRuPcxueaEnjU7TrVufPj4ax09WlPIDxSq8ZgDEIz7WpG&skey=62c1cbfccc78b4b2&v=v15) format('woff2');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/l/font?kit=TK3iWkUHHAIjg75GGy0nna0Eb9DrnnVh7hEQM1rF2EHlYkixNB45VOaKGftV6JzZPLRj&skey=653237e53512d0de&v=v16) format('woff2');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/l/font?kit=jizaRExUiTo99u79P0CW5MnPa3FdvHt_xhGZ2oj1s9DVZZOoAoU4v7DuGWOO4Ivj4yx7Ew&skey=fd0b32f0f3e6a1fc&v=v9) format('woff2');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Serif'), local('PTSerif-Regular'), url(https://fonts.gstatic.com/l/font?kit=EJRVQgYoZZY2vCFuvDFU3J61NW274IwJvMDV_n7uSvSPrsCnI2XYWpTYFl4gd4hqBkcKhgE&skey=e37119e9cd703ddf&v=v9) format('woff2');
+}
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(https://fonts.gstatic.com/l/font?kit=UqyNK9UOIntux_czAvDQx_ZcHqZXBNQDd9LY73fXJZ9uWDSpuczTF8dCY3QgPFyZw6D9F5xzgHX-bzOgm-E8&skey=d59d8f871dbcf35e&v=v7) format('woff2');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/l/font?kit=4iCs6KVjbNBYlgo6fRzXlw7LU8EgysFEqARb51-yStoEWziTCDao3rj5j_fSIE1PK_XQ&skey=7e59fc036a1a8481&v=v12) format('woff2');
+}
+@font-face {
+  font-family: 'Varela';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela'), url(https://fonts.gstatic.com/l/font?kit=DPEtYwqExx0AWHXJAQwlVr-Y9AJkXOO5FD_hjaWfNmvimB477Lo1mALUH8xgL6KT5yPI&skey=e7f38a65469a1a82&v=v8) format('woff2');
+}
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/l/font?kit=w8gdH283Tvk__Lua32TysjIvpdmuJ5tqImgHQ3Lrb_tIjll8DD5V-TzrDohyEQbqVzmBP4wXAvGY&skey=f4466053e3923597&v=v10) format('woff2');
+}
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(https://fonts.gstatic.com/l/font?kit=0yb9GDoxxrvAnPhYGykremwe7lNwuHC_tH_BSRvKTeS0v_JfalW-k7yM0i8WigNMCTcl210&skey=70793812edfff824&v=v8) format('woff2');
+}
