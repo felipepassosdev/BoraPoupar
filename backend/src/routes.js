@@ -2,9 +2,9 @@ const express = require('express')
 
 const routes = express.Router()
 
-const ProductController = require('./controller/ProductController')
+const ExpenseController = require('./controller/ExpenseController')
 // FIRST ROUTE
-routes.get('/products', ProductController.getProducts)
-routes.post('/products', ProductController.postProducts)
+routes.get('/expenses', ExpenseController.getExpenses)
+routes.post('/expenses', ExpenseController.postExpenses)
 
 module.exports = routes;
