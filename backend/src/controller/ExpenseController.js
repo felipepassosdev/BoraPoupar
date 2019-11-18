@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const ExpenseModel = mongoose.model('Expense')
+const ExpenseModel = mongoose.model('ExpenseModel')
 
 module.exports = {
     async getExpenses(req, res) {
