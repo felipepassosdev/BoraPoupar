@@ -17,7 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body ng-app="aplicacao" class="bg-primary">
@@ -31,7 +31,9 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="card">
-                        <h4 class="text-center">Meus Gastos</h4>
+                        <div class="card-header">
+                            <h4 class="text-center">Meus Gastos (diarios)</h4>
+                        </div>
                         <div class="card-body">
                             <form name="form_login">
                                 <div class="form-group">
@@ -53,10 +55,24 @@
                                 <div>
                                     <button type="submit" class="btn-somar btn-primary btn-lg"
                                         ng-click="somar()">Somar</button>
-                                <hr>        
+                                    <hr>
                                     <h5>Resultado: R$ {{ somandoResultados }}</h5>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <h4 class="text-center">Quanto gastei(dia)</h4>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <h4 class="text-center">Quanto gastei(semana)</h4>
+                        <div class="card-body">
                         </div>
                     </div>
                 </div>
@@ -67,24 +83,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <div class="card">
-                        <h4 class="text-center">Quanto poupei(mês)</h4>
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <div class="card">
-                        <h4 class="text-center">Quanto poupei(mês)</h4>
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div>
-            
+
+        </div>
+    </div>
+    <div class="container">
+        <div ng-controller="somaController">
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Gastos</th>
+                                    <th scope="col">Diários</th>
+                                    <th scope="col">Semanais</th>
+                                    <th scope="col">Mensais</th>
+                                    <th scope="col">Poupei</th>
+                                    <th scope="col">Diários</th>
+                                    <th scope="col">Semanais</th>
+                                    <th scope="col">Mensais</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>

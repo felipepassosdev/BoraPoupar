@@ -5,8 +5,14 @@ angular.module('aplicacao').controller('somaController', function($scope) {
     $scope.somandoResultados = []
 
     $scope.enviaGasto = function() {
-        $scope.gastos.push($scope.valor)
-        console.log($scope.gastos)
+        if ($scope.valor) {
+            $scope.gastos.push($scope.valor)
+            console.log($scope.gastos)
+        }
+        else {
+            $scope.msg = 'Não pode estar vazio'
+            console.log("vazio")
+        }
     }
 
     $scope.somar = function() {
