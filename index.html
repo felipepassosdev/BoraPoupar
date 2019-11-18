@@ -17,6 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body ng-app="aplicacao" class="bg-primary">
@@ -25,13 +26,13 @@
             <h1>Bora Poupar 💸</h1>
         </a>
     </nav>
-    <div ng-controller="somaController">
-        <div class="container">
+    <div class="container">
+        <div ng-controller="somaController">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="card">
+                        <h4 class="text-center">Meus Gastos</h4>
                         <div class="card-body">
-                            <h4 class="text-center">Meus Gastos</h4>
                             <form name="form_login">
                                 <div class="form-group">
                                     <div class="input-group mb-3">
@@ -39,17 +40,49 @@
                                             <span class="input-group-text">R$</span>
                                         </div>
                                         <input type="text" class="form-control" ng-model="x">
+                                        <div class="input-group-prepend">
+                                            <button type="submit" class="btn btn-primary"
+                                                ng-click="enviaGasto()">Enviar</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <li ng-repeat="usuario in usuarios track by $index" class="text-dark">
-                                    {{ usuario }}
-                                </li>
-                                <button type="submit" class="btn btn-primary" ng-click="submeterLogin()">Enviar</button>
+                                <div ng-repeat="gasto in gastos track by $index" class="text-dark">
+                                    <h3>- R$ {{ gasto }}</h3>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary btn-lg"
+                                        ng-click="somar()">Somar</button>
+                                    <h6>Resultado: R$ {{ somandoResultados }}</h6>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <h4 class="text-center">Quanto gastei(mês)</h4>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <h4 class="text-center">Quanto poupei(mês)</h4>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <h4 class="text-center">Quanto poupei(mês)</h4>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div>
+            
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>

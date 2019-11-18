@@ -1,13 +1,28 @@
 angular.module('aplicacao').controller('somaController', function($scope) {
-    $scope.guardar = []
+    $scope.gastos = []
+    $scope.resultado = []
+    $scope.floatados = []
+    $scope.somandoResultados = []
 
-    $scope.listar = function($scope) {
-        $scope.guardar.push($scope.valor)
+    $scope.enviaGasto = function() {
+        $scope.gastos.push($scope.x)
+        console.log($scope.gastos)
     }
 
-    $scope.usuarios = []
+    $scope.somar = function() {
+        $scope.gastos.forEach(element => {
+            $scope.floatados = parseFloat(element)
 
-    $scope.submeterLogin = function() {
-        $scope.usuarios.push($scope.x)
+            $scope.resultado.push($scope.floatados)
+
+            $scope.somandoResultados = $scope.resultado.reduce((a, b) => a + b);
+    
+            console.log($scope.somandoResultados)
+
+            $('#meuModal').modal('show')
+        });
     }
+
+
+
 })
