@@ -5,7 +5,7 @@ angular.module('aplicacao').controller('somaController', function($scope) {
     $scope.somandoResultados = []
 
     $scope.enviaGasto = function() {
-        $scope.gastos.push($scope.x)
+        $scope.gastos.push($scope.valor)
         console.log($scope.gastos)
     }
 
@@ -18,9 +18,11 @@ angular.module('aplicacao').controller('somaController', function($scope) {
             $scope.somandoResultados = $scope.resultado.reduce((a, b) => a + b);
     
             console.log($scope.somandoResultados)
-
-            $('#meuModal').modal('show')
         });
+    }
+
+    $scope.limpar = function() {
+        $scope.valor = ''
     }
 
 

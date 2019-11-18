@@ -17,7 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body ng-app="aplicacao" class="bg-primary">
@@ -39,20 +39,22 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">R$</span>
                                         </div>
-                                        <input type="text" class="form-control" ng-model="x">
+                                        <input type="text" class="form-control" ng-model="valor">
                                         <div class="input-group-prepend">
                                             <button type="submit" class="btn btn-primary"
-                                                ng-click="enviaGasto()">Enviar</button>
+                                                ng-click="enviaGasto(); limpar()">Enviar</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div ng-repeat="gasto in gastos track by $index" class="text-dark">
-                                    <h3>- R$ {{ gasto }}</h3>
+                                    <h3>- R$ {{ gasto }} reais</h3>
                                 </div>
+                                <hr>
                                 <div>
-                                    <button type="submit" class="btn btn-primary btn-lg"
+                                    <button type="submit" class="btn-somar btn-primary btn-lg"
                                         ng-click="somar()">Somar</button>
-                                    <h6>Resultado: R$ {{ somandoResultados }}</h6>
+                                <hr>        
+                                    <h5>Resultado: R$ {{ somandoResultados }}</h5>
                                 </div>
                             </form>
                         </div>
@@ -88,6 +90,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <script src="app.js"></script>
     <script src="somaController.js"></script>
+    <script src="postController.js"></script>
 </body>
 
 </html>
