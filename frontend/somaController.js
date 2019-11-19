@@ -5,6 +5,7 @@ angular.module('aplicacao').controller('somaController', function ($scope, $wind
     $scope.somandoResultados = []
     $scope.esvaziar = []
     $scope.disabled = false;
+    $scope.clicado = true;
     $scope.mostrarResultado = false;
 
     $scope.enviaGasto = function () {
