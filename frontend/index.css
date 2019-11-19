@@ -2,6 +2,13 @@ body {
     background-color: #EAEAEA;
     font-family: 'Nunito', sans-serif;
 }
+
+.card {
+    width: 249px;
+    min-height: 376px;
+    
+}
+
 .container {
     padding: 50px;
 }
@@ -21,3 +28,7 @@ body {
 .navbar {
     width: 100vw;
 } 
+
+.menu {
+    margin-top: 60px;
+}
