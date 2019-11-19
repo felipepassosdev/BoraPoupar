@@ -1,4 +1,4 @@
-<h3> 🚀🚀🚀🚀🚀🚀 Beta de um sistema(open source) para ajudar as pessoas á poupar e controlar melhor seus gastos 🚀🚀🚀🚀🚀🚀 </h3>
+<h3> Beta de um sistema(open source) para ajudar as pessoas á poupar e controlar melhor seus gastos 🚀🚀🚀🚀🚀🚀 </h3>
  
  <h3>(Usei: AngularJS + NodeJS + Bootstrap)<h3>
 
