@@ -17,10 +17,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
-<body ng-app="aplicacao" class="bg-primary">
+
+<body ng-app="aplicacao">
     <nav class="navbar navbar-dark bg-primary shadow-lg">
         <a class="navbar-brand" href="#">
             <h1>Bora Poupar 💸</h1>
@@ -30,9 +33,9 @@
         <div ng-controller="somaController">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3">
-                    <div class="card">
+                    <div class="card border-primary shadow-lg">
                         <div class="card-header">
-                            <h4 class="text-center">Meus Gastos (diarios)</h4>
+                            <h4 class="text-center text-primary">Meus Gastos (diarios)</h4>
                         </div>
                         <div class="card-body">
                             <form name="form_login">
@@ -48,15 +51,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div ng-repeat="gasto in gastos track by $index" class="text-dark">
-                                    <h3>- R$ {{ gasto }} reais</h3>
+                                <div ng-repeat="gasto in gastos track by $index">
+                                    <div class="row">
+                                        <h5 class="text-dark">- R$ {{ gasto }} talkeys</h5>
+                                        <!-- <div class="col-lg-5 col-md-5 col-sm-5">
+                                        </div> -->
+                                        <!-- <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <select class="form-control form-control-sm" id="inlineFormCustomSelect">
+                                                <option value="1" selected>Roupa</option>
+                                                <option value="2">Luz</option>
+                                                <option value="3">Água</option>
+                                            </select>
+                                        </div> -->
+                                    </div>
                                 </div>
                                 <hr>
                                 <div>
-                                    <button type="submit" class="btn-somar btn-primary btn-lg"
-                                        ng-click="somar()">Somar</button>
+                                    <button type="submit" class="btn-somar btn-primary btn-lg" ng-click="somar()"
+                                        ng-disabled="disabled" ng-class="{ 'btn btn-default': clicado}">Somar</button>
                                     <hr>
-                                    <h5>Resultado: R$ {{ somandoResultados }}</h5>
+                                    <h5 ng-hide="!mostrarResultado">Resultado: R$ {{ somandoResultados }}</h5>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <button type="submit" class="btn btn-primary" ng-click="x()">salvar</button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button type="submit" class="btn btn-danger"
+                                                ng-click="excluir()">excluir</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                         </div>

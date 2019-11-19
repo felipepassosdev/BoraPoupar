@@ -1,10 +1,13 @@
-angular.module('aplicacao').controller('somaController', function($scope) {
+angular.module('aplicacao').controller('somaController', function ($scope, $window) {
     $scope.gastos = []
     $scope.resultado = []
     $scope.floatados = []
     $scope.somandoResultados = []
+    $scope.esvaziar = []
+    $scope.disabled = false;
+    $scope.mostrarResultado = false;
 
-    $scope.enviaGasto = function() {
+    $scope.enviaGasto = function () {
         if ($scope.valor) {
             $scope.gastos.push($scope.valor)
             console.log($scope.gastos)
@@ -15,22 +18,27 @@ angular.module('aplicacao').controller('somaController', function($scope) {
         }
     }
 
-    $scope.somar = function() {
+    $scope.somar = function (e) {
         $scope.gastos.forEach(element => {
             $scope.floatados = parseFloat(element)
 
             $scope.resultado.push($scope.floatados)
 
             $scope.somandoResultados = $scope.resultado.reduce((a, b) => a + b);
-    
+
+            $scope.disabled = true
+            $scope.mostrarResultado = true
             console.log($scope.somandoResultados)
+
         });
     }
 
-    $scope.limpar = function() {
+    $scope.limpar = function () {
         $scope.valor = ''
     }
 
-
+    $scope.excluir = function () {
+        $window.location.reload()
+    }
 
 })
