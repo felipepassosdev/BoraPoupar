@@ -1,4 +1,4 @@
-angular.module('aplicacao').controller('somaController', function ($scope, $window) {
+angular.module('aplicacao').controller('somaController', function ($scope, $window, $http) {
     $scope.gastos = []
     $scope.resultado = []
     $scope.floatados = []
@@ -42,4 +42,17 @@ angular.module('aplicacao').controller('somaController', function ($scope, $wind
         $window.location.reload()
     }
 
+    $scope.getMoney = function () {
+        $http.get("http://localhost:3001/api/money").then(function (data) {
+            console.log(data.data[0].income)
+            $scope.gastei = data.data[0].spent
+            $scope.poupei = data.data[0].spared
+            $scope.renda = data.data[0].income
+        });
+    }
+
+    $window.onload = function(e) {
+        $scope.getMoney()
+      }
+      
 })
