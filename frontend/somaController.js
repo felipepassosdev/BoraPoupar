@@ -54,5 +54,15 @@ angular.module('aplicacao').controller('somaController', function ($scope, $wind
     $window.onload = function(e) {
         $scope.getMoney()
       }
+
+      $scope.sendMail = function() {
+        var link = "mailto:felipepassosc@gmail.com"
+                 + "?cc= "
+                 + "&subject=" + escape("This is my subject")
+                 + "&body=" + escape(document.getElementById('myText').value)
+        ;
+    
+        window.location.href = link;
+    }
       
 })

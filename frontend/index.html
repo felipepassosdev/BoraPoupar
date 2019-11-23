@@ -85,12 +85,12 @@
                                                 ng-click="somar()" ng-disabled="disabled"
                                                 ng-class="{ 'btn btn-default': clicado}">Somar</button>
                                             <hr>
-                                            <h5 ng-hide="!mostrarResultado">Resultado: R$ {{ somandoResultados }}</h5>
+                                            <h5 ng-hide="!mostrarResultado" id="myText">Resultado: R$ {{ somandoResultados }}</h5>
                                             <hr>
                                             <button type="submit" class="btn btn-default btn-super"
                                                 ng-click="excluir()">excluir</button>
                                             <button type="submit" class="btn btn-primary btn-super"
-                                                ng-click="x()">salvar</button>
+                                                ng-click="sendMail()">salvar</button>
                                         </div>
                                     </form>
                                 </div>
